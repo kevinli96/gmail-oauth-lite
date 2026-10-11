@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gmail-oauth-lite"
+version = "0.1.0"
+description = "Minimal, framework-agnostic Gmail OAuth + message-reading helpers"
+requires-python = ">=3.10"
+dependencies = [
+    "google-api-python-client>=2.132,<3.0",
+    "google-auth>=2.35,<3.0",
+    "google-auth-oauthlib>=1.2,<2.0",
+    "google-auth-httplib2>=0.2,<1.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["gmail_oauth_lite*"]
